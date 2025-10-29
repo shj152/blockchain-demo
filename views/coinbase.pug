@@ -8,11 +8,11 @@ block content
       h3 #{__('Peer')} #{peer}
       .row.row-horizon
         - var blocks = []
-        - blocks.push({block: 1, chain: chain, nonce: 16651, coinbasevalue: '100.00', coinbaseto: 'შალვა', txs: [], previous: '0000000000000000000000000000000000000000000000000000000000000000'})
-        - blocks.push({block: 2, chain: chain, nonce: 215458, coinbasevalue: '100.00', coinbaseto: 'შალვა', txs: [{value: '10.00', from: 'შალვა', to: 'სოფო'},{value: '20.00', from: 'შალვა', to: 'ლუკა'},{value: '15.00', from: 'შალვა', to: 'ნინო'},{value: '15.00', from: 'შალვა', to: 'გურამი'}], previous: '0000438d7625b86a6f366545b1929975a0d3ff1f8847e56cc587cadddb0ab781'})
-        - blocks.push({block: 3, chain: chain, nonce: 146, coinbasevalue: '100.00', coinbaseto: 'შალვა', txs: [{value: '10.00', from: 'ნინო', to: 'ნიკა'},{value: '5.00', from: 'გურამი', to: 'ნიკა'},{value: '20.00', from: 'ლუკა', to: 'ნუცა'}], previous: '0000baeab68c2a60f9a6fa56355438d97c672a15494fcea617064d9314f9ff63'})
-        - blocks.push({block: 4, chain: chain, nonce: 18292, coinbasevalue: '100.00', coinbaseto: 'შალვა', txs: [{value: '15.00', from: 'ნიკა', to: 'გიორგი'},{value: '5.00', from: 'ნინო', to: 'გურამი'},{value: '8.00', from: 'სოფო', to: 'ნიკა'}], previous: '0000df1d632b734f5a5fc126a0f0e8894fb4c8314ba7086b62980559af6771b9'})
-        - blocks.push({block: 5, chain: chain, nonce: 108899, coinbasevalue: '100.00', coinbaseto: 'სოფო', txs: [{value: '2.00', from: 'ნიკა', to: 'თამუნა'},{value: '6.00', from: 'გიორგი', to: 'მარიამი'},{value: '4.00', from: 'გიორგი', to: 'ნატა'},{value: '9.95', from: 'ნუცა', to: 'ქეთი'}], previous: '0000c694336f88129f3685bd3ba5d67c445dfd8d18bd22f5d87301dd560eb30e'})
+        - blocks.push({block: 1, chain: chain, nonce: 42971, coinbasevalue: '100.00', coinbaseto: 'შალვა', txs: [], previous: '0000000000000000000000000000000000000000000000000000000000000000'})
+        - blocks.push({block: 2, chain: chain, nonce: 39401, coinbasevalue: '100.00', coinbaseto: 'შალვა', txs: [{value: '10.00', from: 'შალვა', to: 'სოფო'},{value: '20.00', from: 'შალვა', to: 'ლუკა'},{value: '15.00', from: 'შალვა', to: 'ნინო'},{value: '15.00', from: 'შალვა', to: 'გურამი'}], previous: '000083d3a4b14d8ba80326ad9fd70e917815e9b7ce1afae85b2cc0d2a0847dd3'})
+        - blocks.push({block: 3, chain: chain, nonce: 53929, coinbasevalue: '100.00', coinbaseto: 'შალვა', txs: [{value: '10.00', from: 'ნინო', to: 'ნიკა'},{value: '5.00', from: 'გურამი', to: 'ნიკა'},{value: '20.00', from: 'ლუკა', to: 'ნუცა'}], previous: '0000816fd3bbf96f349f9fd433a1f748c221068b30db5fea2bfb7736d0248f9f'})
+        - blocks.push({block: 4, chain: chain, nonce: 131389, coinbasevalue: '100.00', coinbaseto: 'შალვა', txs: [{value: '15.00', from: 'ნიკა', to: 'გიორგი'},{value: '5.00', from: 'ნინო', to: 'გურამი'},{value: '8.00', from: 'სოფო', to: 'ნიკა'}], previous: '00009ae4f379cc1fcf60885b0cf0fec22d680e034aedce730c8a010dc86e8c0b'})
+        - blocks.push({block: 5, chain: chain, nonce: 39191, coinbasevalue: '100.00', coinbaseto: 'სოფო', txs: [{value: '2.00', from: 'ნიკა', to: 'თამუნა'},{value: '6.00', from: 'გიორგი', to: 'მარიამი'},{value: '4.00', from: 'გიორგი', to: 'ნატა'},{value: '9.95', from: 'ნუცა', to: 'ქეთი'}], previous: '0000988ece1c38b1799e9fc7b735950ff68f392573c077633f92647c69dcbad1'})
         each block in blocks
           .col-xs-7
             include includes/coinbaseblock
