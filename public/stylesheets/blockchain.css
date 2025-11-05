@@ -44,3 +44,38 @@ input {
   border: 0;
   z-index: 20000;
 }
+/* === Main Top Navigation Bar Styling === */
+.navbar.navbar-inverse, 
+.navbar.navbar-default, 
+nav.navbar {
+  background-color: #141C38 !important; /* Deep navy background */
+  border: none;
+}
+
+/* Navigation links (Keys, Signatures, Transaction, Blockchain) */
+.navbar a,
+.navbar-nav > li > a {
+  color: #FFBA00 !important; /* Gold text */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar-nav > li > a:hover,
+.navbar a:focus {
+  color: #ffffff !important; /* White on hover */
+  text-decoration: none;
+}
+
+/* Optional: make the active page tab (e.g., “Signatures”) more visible */
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:focus,
+.navbar-nav > .active > a:hover {
+  color: #ffffff !important;
+  background-color: #141C38 !important;
+  border-bottom: 2px solid #FFBA00; /* gold underline for active tab */
+}
+/* === Page Background === */
+body {
+  background-color: #f9f9f9 !important; /* soft light gray background */
+}
